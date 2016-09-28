@@ -1,0 +1,71 @@
+body {
+	font: 10pt Verdana,Arial;
+	margin: 0;
+	padding: 0;
+}
+#usernote {
+	position: absolute;
+	right: 0.5em;
+	top: 0.5em;
+	background-color: #ddd;
+	padding: 0.2em 0.5em;
+}
+#header {
+	background-color: #888;
+	color: white;
+	padding: 0.2em;
+	margin: 0;
+}
+#header img {
+	vertical-align: middle;
+}
+#menubar {
+	width: 100%;
+	min-height: 1em;
+}
+#menubar a:hover {
+	background-color: limegreen;
+	color: white;
+}
+#menubar a {
+	text-decoration: none;
+	padding: 0 1em 0.1em 1em;
+	margin: 0 1em;
+	background-color: #888;
+	color: white;
+}
+#content {
+	margin: 1em;
+}
+table {
+	border: 1px solid #888;
+	margin-bottom: 1em;
+}
+tr.odd {
+	background-color: #eee;
+}
+tr.even {
+	background-color: white;
+}
+th {
+	background-color: #888;
+	color: white;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+form {
+	display: inline;
+}
+input,textarea {
+	border: 1px solid #888;
+}
+input:focus, textarea:focus {
+	background-color: #ffb;
+}
+td input, td textarea {
+	border-color: #ccc;
+}
+.invisible {
+	display: none;
+}
+

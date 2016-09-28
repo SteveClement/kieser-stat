@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS session_results;
+DROP TABLE IF EXISTS sessions;
+DROP TABLE IF EXISTS user_machines;
+DROP TABLE IF EXISTS machines;
+DROP TABLE IF EXISTS users;
+-- End

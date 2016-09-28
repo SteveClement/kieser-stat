@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: kieser-stat
+Version: 0.3
+Summary: Tools for allowing customers of a gym to store their machine settings, session times
+and session results in a database. The customers and staff can then analyse the
+database to monitor progress.
+Home-page: http://www.ion.lu/
+Author: Gavin Panella
+Author-email: gavin@ion.lu
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN

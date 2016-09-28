@@ -1,0 +1,6 @@
+DELETE FROM PREFIXsession_results;
+DELETE FROM PREFIXsessions;
+DELETE FROM PREFIXuser_machines;
+DELETE FROM PREFIXmachines;
+DELETE FROM PREFIXusers;
+-- End

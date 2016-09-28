@@ -1,0 +1,58 @@
+To get matplotlib running:
+
+	mkdir ~apache/.matplotlib ~apache/.ttffont.cache
+	chown apache:apache ~apache/.matplotlib ~apache/.ttffont.cache
+
+Packages needed:
+
+python-kid
+tidy
+python-sqlobject
+
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName kieser
+
+        DocumentRoot /var/www/kieser
+
+        <Directory />
+                Options FollowSymLinks
+                AllowOverride None
+        </Directory>
+        <Directory /var/www/kieser/>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride None
+                Order allow,deny
+                allow from all
+SetHandler python-program
+#PythonPath "['/home/gavin/Work/Gym/src']+sys.path"
+PythonHandler kieser.stat.web.handler
+PythonDebug On
+PythonAutoReload On
+
+        </Directory>
+
+        ErrorLog /var/log/apache2/error-kieser.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog /var/log/apache2/access-kieser.log combined
+
+</VirtualHost>
+
+kieser.stat.db.ini : 
+
+[DEFAULT]
+;user =
+;password =
+;host = localhost
+;port = 3306
+;database = mysql
+;schema = qmail_log_db
+;debug = no
+
+[connection]
+user = root
+password = asap19
